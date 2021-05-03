@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&display=swap");
+
+@blue-color: #2a9d8f;
+@lightblue-color: #00c9b0;
+@blue: #005877;
+@red-color: #e44a24;
+@orange-color: #f4a261;
+@yellow-color: #feba21;
+@darkblue-color: #264653;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo 2", sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1517px;
+    margin: 0 auto;
+    padding: 75px;
+}
+
+.chapter {
+    width: 218px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    /*max-width: 1290px;*/
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    .logo img {
+        width: 200px;
+    }
+    #menu-toggle {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 47px;
+        right: 76px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        z-index: 1;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    .burger > span,
+    .burger > span::before,
+    .burger > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 6px;
+        border-radius: 25px;
+        background-color: @darkblue-color;
+        transition: all 0.5s ease;
+    }
+
+    .burger > span::before {
+        content: "";
+        top: -16px;
+    }
+
+    .burger > span::after {
+        content: "";
+        top: 16px;
+    }
+
+    .menu {
+        font-weight: 300;
+        margin: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 29px;
+        div a {
+            border-radius: 25px;
+            padding: 8px 18px 11px 18px;
+            transition: 0.6s all ease;
+        }
+        div a:hover {
+            color: white;
+        }
+        .books a:hover {
+            background-color: @yellow-color;
+        }
+        .main a:hover {
+            background-color: @blue;
+        }
+
+        .audio a:hover {
+            background-color: @orange-color;
+        }
+
+        .top a:hover {
+            background-color: @red-color;
+        }
+    }
+    .icons {
+        margin-left: 233px;
+        align-items: center;
+        display: flex;
+        img {
+            width: 40px;
+        }
+        .account {
+            a {
+                position: relative;
+                display: block;
+                width: 40px;
+                height: 40px;
+                img {
+                    position: absolute;
+                    width: 35px;
+                    right: 3px;
+                    top: 3px;
+                    padding-left: 3px;
+                }
+                #others {
+                    display: none;
+                }
+            }
+        }
+        .saved {
+            margin-left: 30px;
+            a {
+                position: relative;
+                display: block;
+                width: 40px;
+                height: 40px;
+                img {
+                    position: absolute;
+                    /*top: -6px;*/
+                    transition: all 0.4s ease;
+                }
+                #heart-hover {
+                    opacity: 0;
+                }
+            }
+            a:hover {
+                #heart {
+                    opacity: 0;
+                }
+                #heart-hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.registration {
+    background: url(../img/lines-account.png) #ebebeb no-repeat 7% 50%;
+    .header-account {
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 700;
+            color: @blue;
+        }
+        p {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 300;
+            padding-top: 18px;
+        }
+    }
+    .registr-form {
+        margin-top: 68px;
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            color: @blue;
+        }
+        form {
+            width: 628px;
+            margin: 0 auto;
+            padding-top: 35px;
+            display: flex;
+            flex-direction: column;
+            input {
+                padding: 0 38px;
+                color: #a6a6a6;
+                font-size: 30px;
+                font-weight: 400;
+                height: 73px;
+                border-radius: 25px;
+                border: 3px solid #a6a6a6;
+                margin: 20px 0;
+            }
+            .required {
+                color: #737373;
+                font-size: 28px;
+                font-weight: 400;
+                margin-bottom: 47px;
+                padding-left: 41px;
+            }
+            .submit {
+                cursor: pointer;
+                width: 383px;
+                height: 88px;
+                margin: 0 auto;
+                background-color: @yellow-color;
+                border: 4px solid @yellow-color;
+                font-weight: 700;
+                font-size: 32px;
+                color: white;
+                border-radius: 100px;
+                transition: all 0.5s ease;
+            }
+            .submit:hover {
+                background-color: white;
+                color: @yellow-color;
+            }
+        }
+        .options {
+            margin-top: 12px;
+            h4 {
+                text-align: center;
+                a {
+                    font-size: 25px;
+                    font-weight: 400;
+                    color: @blue;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .personal-info {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 25px;
+        .go-to-saved {
+            padding-top: 50px;
+            h3 {
+                position: relative;
+                width: 50%;
+                margin: 0 auto;
+                transition: all 0.5s ease;
+                img {
+                    position: relative;
+                    top: 5px;
+                    left: 6px;
+                }
+            }
+            h3:hover {
+                transform: scale(1.1, 1.1);
+            }
+        }
+        form {
+            margin-top: 40px;
+            h3 {
+                font-size: 25px;
+                margin-bottom: 30px;
+                color: #005877;
+            }
+            div {
+                width: 50%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                margin-bottom: 30px;
+            }
+            label {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            input {
+                text-align: center;
+                height: 35px;
+                width: 80%;
+                padding: 20px;
+                font-size: 19px;
+                font-weight: 400;
+                border-radius: 5px;
+                border: 2px solid #a6a6a6;
+                margin: 20px 0;
+            }
+            .submit {
+                cursor: pointer;
+                width: 275px;
+                height: 60px;
+                margin: 0 auto;
+                background-color: #feba21;
+                border: 4px solid #feba21;
+                font-weight: 700;
+                font-size: 24px;
+                color: white;
+                border-radius: 100px;
+                transition: all 0.5s ease;
+                padding: 0;
+            }
+            .submit:hover {
+                background-color: white;
+                color: @yellow-color;
+            }
+        }
+    }
+}
+
+.footer {
+    .container {
+        background: @darkblue-color;
+        display: grid;
+        grid-template-columns: 230px 285px 285px 523px;
+        font-size: 22px;
+        color: white;
+        p,
+        h3 {
+            text-align: center;
+        }
+        .foot-logo {
+            margin-top: 52px;
+            p {
+                font-weight: 300;
+                font-size: 24px;
+            }
+        }
+        .info {
+            padding-left: 50px;
+            margin-top: 35px;
+            p,
+            a {
+                color: white;
+                font-weight: 400;
+                line-height: 55px;
+                letter-spacing: 2px;
+            }
+        }
+        .contacts {
+            padding-left: 20px;
+            h3 {
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+            p {
+                letter-spacing: 2px;
+                line-height: 35px;
+            }
+            .phone {
+                h3 {
+                    padding-bottom: 13px;
+                }
+            }
+            .social-net {
+                h3 {
+                    padding-top: 42px;
+                    padding-bottom: 25px;
+                }
+                div {
+                    width: 281px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+h1 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #a1cbdb;
+}

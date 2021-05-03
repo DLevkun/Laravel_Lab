@@ -3,7 +3,7 @@
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: url("https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8j4PKcPg.ttf")
+    src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8j4PKcPg.ttf)
         format("truetype");
 }
 @font-face {
@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKcPg.ttf")
+    src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jvvKcPg.ttf)
         format("truetype");
 }
 @font-face {
@@ -19,7 +19,7 @@
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url("https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jjPKcPg.ttf")
+    src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jjPKcPg.ttf)
         format("truetype");
 }
 @font-face {
@@ -27,7 +27,7 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url("https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jWfWcPg.ttf")
+    src: url(https://fonts.gstatic.com/s/exo2/v10/7cH1v4okm5zmbvwkAx_sfcEuiD8jWfWcPg.ttf)
         format("truetype");
 }
 * {
@@ -193,7 +193,6 @@ a {
     font-size: 40px;
     font-weight: 600;
     color: #005877;
-    margin-bottom: 20px;
 }
 .registration .registr-form form {
     width: 628px;
@@ -375,232 +374,10 @@ a {
     display: flex;
     justify-content: space-between;
 }
-
-.single {
+h1 {
     width: 50%;
     margin: 0 auto;
     text-align: center;
-    padding: 0 0 50px;
-    font-size: 50px;
-}
-
-.single2 {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 35px;
-}
-
-.errors {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffacac;
-}
-.errors ul {
-    padding: 0 20px;
-}
-
-.success {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #c3ffb7;
-}
-
-.user-list {
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.user-list h3 {
-    font-size: 25px;
-}
-
-.user-list p {
-    font-size: 22px;
-}
-
-.background {
-    background-color: #d3d3d3;
-}
-
-.add-book {
-    width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    font-size: 25px;
-}
-
-.add-book input,
-select {
-    width: 500px;
-    height: 35px;
-    border: solid 2px #979797;
-    border-radius: 5px;
-    padding: 0 20px;
-    margin-bottom: 40px;
-    font-size: 20px;
-}
-
-.add-book label {
-    margin-bottom: 20px;
-}
-
-.add-book .submit {
-    cursor: pointer;
-    font-size: 30px;
-    font-weight: 600;
-    height: 65px;
-    width: 350px;
-    margin: 0 auto 35px;
-    padding: 5px;
-    background-color: #feba21;
-    border: solid 3px #feba21;
-    color: white;
-    border-radius: 50px;
-    transition: 0.6s all ease;
-}
-
-.add-book .submit:hover {
-    background-color: white;
-    color: #feba21;
-}
-
-.books-list {
-    width: 40%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.books-list div h1 {
-    font-size: 38px;
-}
-
-.books-list div h2 {
-    font-size: 32px;
-}
-
-.books-list div p {
-    font-size: 22px;
-}
-
-.books-list .two-btn {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-}
-
-.books-list .two-btn a {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.books-list .two-btn #blue {
-    background-color: #89d0ff;
-}
-
-.books-list .two-btn #red {
-    background-color: #ff8686;
-}
-
-.books-list .one-btn {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    justify-content: center;
-}
-
-.books-list .one-btn a {
-    text-align: center;
-    padding: 10px;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-
-.books-list .one-btn #yellow {
-    background-color: #feba21;
-    color: white;
-    border-radius: 20px;
-    font-size: 25px;
-}
-
-.container {
-    max-width: 1517px;
-    margin: 0 auto;
-    padding: 75px;
-}
-.chapter {
-    width: 218px;
-    margin: 0 auto;
-}
-
-.main-wrap {
-    background-color: #ebebeb;
-}
-
-.main-wrap .genre-list {
-    width: 100%;
-    margin: 75px 0;
-    padding: 75px;
-    background-color: white;
-    border-radius: 50px;
-}
-.main-wrap .genre-list .wrap-genres {
-    margin-top: 36px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.main-wrap .genre-list .wrap-genres .column p {
-    font-size: 22px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 45px;
-    letter-spacing: 1px;
-}
-.main-wrap .genre-list .wrap-genres .column p .choosed {
-    font-weight: 600;
-}
-.main-wrap .genre-list .wrap-genres .column p a:hover {
-    font-weight: 600;
-}
-
-.active {
-    font-weight: 700;
-}
-
-.roles {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.roles .role {
-    font-size: 30px;
-    list-style: none;
-    font-weight: 600;
-}
-
-.users {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 25px;
-}
-
-.role-btn {
-    width: 40%;
-    margin: 10px auto;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #005877;
-    color: white;
+    padding: 50px 0;
+    background-color: #a1cbdb;
 }
